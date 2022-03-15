@@ -166,8 +166,8 @@ class Auth extends CI_Controller
 				'verifikasi' => $verifikasi,
 				'tanggal_buat' => time()
 			];
-			// $this->siswa_model->tambah($data);
-			// $this->db->insert('user_verifikasi', $user_verifikasi);
+			$this->siswa_model->tambah($data);
+			$this->db->insert('user_verifikasi', $user_verifikasi);
 			$this->kirimEmail($verifikasi, 'verifikasi', $email);
 			$this->session->set_flashdata('pesan', '<div class="alert alert-success" role="alert">
                 Akun anda berhasil ditambahkan, harap verifikasi email anda!
