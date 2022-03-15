@@ -1,0 +1,22 @@
+.course-thumbnail-go-no-modal {
+	display: block;
+	width: 30px;
+	height: 50px;
+	object-fit: cover;
+}
+
+.course-thumbnail-go {
+	width: 100%;
+	margin: 0;
+	object-fit: cover;
+}
+
+.course-thumbnail-go img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+th {
+	text-align: center;
+}
